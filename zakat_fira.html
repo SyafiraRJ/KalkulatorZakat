@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Zakat</title>
+    <!-- my css  -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="assets/logo17.png" alt="Logo" class="logo">
+            <h1>Kalkulator Zakat</h1>
+        </div>
+        <img src="assets/niatzakat.jpeg">
+        <label for="gaji"> Masukkan Gaji per bulan Anda : </label>
+        <!-- Tambahkan event listener (oninput) pada input field, untuk mengatur format Rupiah -->
+        <input type="text" id="gaji" oninput="formatRupiah(this)">
+        <button onclick="cekZakat()">Cek</button>
+        <p id="hasil"> </p>
+    </div>
+    <div id="watermark">Created By Syafirah Raidhatul Jannah | X RPL 2</div>
+
+    <!-- my js -->
+    <script src="JS/main.js"></script>
+</body>
+</html>
